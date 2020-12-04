@@ -1,0 +1,26 @@
+{
+  "name": "nodejs-complete-guide",
+  "version": "1.0.0",
+  "description": "Node Js Learning",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "start-server": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishkrm6/NODEJS-COMPLETE-GUIDE.git"
+  },
+  "author": "Manish Kr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manishkrm6/NODEJS-COMPLETE-GUIDE/issues"
+  },
+  "homepage": "https://github.com/manishkrm6/NODEJS-COMPLETE-GUIDE#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

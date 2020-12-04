@@ -1,9 +1,25 @@
 const http = require('http');
-const routes = require('./routes');
+const express = require('express');
 
-console.log(routes.someText);
+const app = express();
 
-const server = http.createServer(routes);
 
-server.listen(3000);
+//console.log(app);
+
+app.use( (req,res,next) => {
+    console.log("I am in the Middleware");
+    next();
+});
+
+app.use( (req,res,next) => {
+    console.log("I am another Middleware");
+    res.send("<h1>Hello Express Js!");
+});
+
+app.listen(3000);
+
+/*const server = http.createServer(app);
+server.listen(3000);*/
+
+
 

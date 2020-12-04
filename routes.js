@@ -37,7 +37,7 @@ if( url === '/message' && method === "POST"){
 
             });
 
-            //console.log(message);
+            console.log(message);
             
 
     });
@@ -58,6 +58,7 @@ if( url === '/message' && method === "POST"){
 
 };
 
-exports.handler = requestHandler;
+module.exports = requestHandler;
+//exports.handler = requestHandler;
 
 
